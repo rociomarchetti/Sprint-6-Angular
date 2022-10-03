@@ -1,3 +1,5 @@
+import { EscenaComponent } from './escena.component';
+import { HomeComponent } from './home.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -6,7 +8,9 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    EscenaComponent
   ],
   imports: [
     BrowserModule,
