@@ -1,14 +1,21 @@
 import { StoryLine } from './main.interface';
-import {Component, Input} from '@angular/core'
+import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'app-escena',
-    templateUrl: 'escena.component.html',
-    styleUrls: ['escena.component.css']
+  selector: 'app-escena',
+  templateUrl: 'escena.component.html',
+  styleUrls: ['escena.component.css'],
 })
-
 export class EscenaComponent {
-    
-    @Input() storylines: StoryLine[] = [];
+  currentSentence: number = 0;
 
-} 
+  prev(): number {
+    return this.currentSentence--;
+  }
+
+  next(): number {
+    return this.currentSentence++;
+  }
+
+  @Input() storylines: StoryLine[] = [];
+}

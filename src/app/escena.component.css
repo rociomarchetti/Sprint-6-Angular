@@ -25,3 +25,11 @@ button {
     padding: 3%;
     font-size: x-large;
 }
+
+.on {
+    background-color: palevioletred;
+}
+
+.off {
+    background-color:antiquewhite;
+}

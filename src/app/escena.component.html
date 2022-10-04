@@ -1,9 +1,10 @@
 <div class="actionButtons">
-    <button>Anterior</button>
-    <button>Siguiente</button>
+    <button (click)="prev()">Anterior</button>
+    <button (click)="next()">Siguiente</button>
 </div>
 <div class="storyActions">
-    <span *ngFor="let storyline of storylines">
+    <span *ngFor="let storyline of storylines; let i= index"
+        [ngClass]="currentSentence === i ? 'on' : 'off'">
         {{storyline.action}}
     </span>
 </div>
