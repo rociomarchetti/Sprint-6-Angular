@@ -1,4 +1,5 @@
-import {Component} from '@angular/core'
+import { StoryLine } from './main.interface';
+import {Component, Input} from '@angular/core'
 
 @Component({
     selector: 'app-escena',
@@ -7,4 +8,5 @@ import {Component} from '@angular/core'
 
 export class EscenaComponent {
     
+    @Input() storylines: StoryLine[] = [];
 } 
