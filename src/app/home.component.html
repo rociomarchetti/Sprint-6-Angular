@@ -1,1 +1,6 @@
-<app-escena [storylines]="storylines"></app-escena>
+<div class="welcomePage" *ngIf="isActive === false">
+    <h1>A continuació tens una petita història amb herois i no gaire sort.</h1>
+    <h3>Clica el botó per conèixer-la.</h3>
+    <button (click)="start()">A veure?</button>
+</div>
+<app-escena [storylines]="storylines" *ngIf="isActive === true"></app-escena>
