@@ -17,19 +17,23 @@ export class HomeComponent {
 
   storylines: StoryLine[] = [
     {
-      action:
+      txt:
         'El nostre heroi estava surant per lespai sideral quan a la llunyania va albirar una nau espacial',
+      img: '1.jpg'
     },
     {
-      action:
+      txt:
         'Sentia curiositat per linterior de la nau i es va posar a inspeccionar-la. Va arribar a una sala amb dues portes.',
+      img: '2.jpg'
     },
     {
-      action: 'Lheroi va decidir travessar la porta que el portava a casa',
+      txt: 'Lheroi va decidir travessar la porta que el portava a casa',
+      img: '3.jpg'
     },
     {
-      action:
+      txt:
         'Mentrestant, altres heroes no van tenir tanta sort en la seva elecció ...',
+      img: '4.jpg'
     },
   ];
 }

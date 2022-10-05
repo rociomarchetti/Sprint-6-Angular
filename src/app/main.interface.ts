@@ -1,3 +1,5 @@
 export interface StoryLine {
-    action: string;
+    txt: string,
+    img: string
 }
+    

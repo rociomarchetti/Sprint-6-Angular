@@ -1,10 +1,12 @@
-<div class="actionButtons">
-    <button (click)="prev()">Anterior</button>
-    <button (click)="next()">Siguiente</button>
-</div>
-<div class="storyActions">
-    <span *ngFor="let storyline of storylines; let i= index"
-        [ngClass]="currentSentence === i ? 'on' : 'off'">
-        {{storyline.action}}
-    </span>
+<div class="background-image"  style="background-image: url(../assets/{{storylines[currentSentence].img}});">
+    <div class="actionButtons">
+        <button (click)="prev()">Anterior</button>
+        <button (click)="next()">Siguiente</button>
+    </div>
+    <div class="storyActions">
+        <span *ngFor="let storyline of storylines; let i= index"
+            [ngClass]="currentSentence === i ? 'on' : 'off'">
+            {{storyline.txt}}
+        </span>
+    </div>
 </div>
