@@ -10,14 +10,20 @@ export class EscenaComponent {
   currentSentence: number = 0;
 
   prev(): number {
-    return this.currentSentence--;
+    if (this.currentSentence > 0) {
+      this.currentSentence--;
+    }
+    return this.currentSentence;
   }
 
   next(): number {
-    return this.currentSentence++;
+    if (this.currentSentence < 3) {
+      this.currentSentence++;
+    }
+    return this.currentSentence;
   }
 
   @Input() storylines: StoryLine[] = [];
-  
+
   ngOnInit(): void {}
 }
