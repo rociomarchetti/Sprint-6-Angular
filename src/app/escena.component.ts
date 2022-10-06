@@ -17,7 +17,7 @@ export class EscenaComponent {
   }
 
   next(): number {
-    if (this.currentSentence < 3) {
+    if (this.currentSentence < this.storylines.length) {
       this.currentSentence++;
     }
     return this.currentSentence;
